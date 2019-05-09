@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Title of web browser tab is Magical Moments LLC-->
+<title>Magic Moments LLC</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="index.js"></script>
+<script src="testimonial.js"></script>
+<body onload="javascript:getAllData();">
+  <!--The homediv contains the container which the home carousel is in-->
+<div id="homediv">
+  <!--inside the container is the carousel of images whih also has the navigation bar-->
+<div class="container">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!--There are seven indicators letting the user know that there are seven images in the carousel the indicators range from 0-6-->
+    <!-- Indicators -->
+    <ol class="carousel-indicators" style="position:absolute; top:800px; left:680px;">
+      <li data-target="#myCarousel" data-slide-to="0" class="active" style="border: 2px solid #ff6699;"></li>
+      <li data-target="#myCarousel" data-slide-to="1" style="border: 2px solid #ff6699;"></li>
+      <li data-target="#myCarousel" data-slide-to="2" style="border: 2px solid #ff6699;"></li>
+      <li data-target="#myCarousel" data-slide-to="3" style="border: 2px solid #ff6699;"></li>
+      <li data-target="#myCarousel" data-slide-to="4" style="border: 2px solid #ff6699;"></li>
+      <li data-target="#myCarousel" data-slide-to="5" style="border: 2px solid #ff6699;"></li>
+      <li data-target="#myCarousel" data-slide-to="6" style="border: 2px solid #ff6699;"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <!--inside the inner carousel there are 7 items containing the seven images-->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="11251734_880522211983894_963776725870393377_n.jpg" alt="Los Angeles" style="width:1700px; height:850px;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+      <div class="item">
+        <img src="29791068_1692666160769491_379959142149777818_n.jpg" alt="Chicago" style="width:100%; height:850px;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+      <div class="item">
+        <img src="12239498_970581482977966_2358579664809589567_n.jpg" alt="New York" style="width:100%; height:850px;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+      <div class="item">
+        <img src="12219422_970581356311312_8394032943982599039_n.jpg" alt="New York" style="width:100%; height:850px;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+      <div class="item">
+        <img src="29792070_1692666027436171_4180969828057065893_n.jpg" alt="New York" style="width:100%; height:850px;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+      <div class="item">
+        <img src="11951759_934844606551654_6370948132106660004_n.jpg" alt="New York" style="width:100%; height:850px;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+      <div class="item">
+        <img src="29683356_1692666240769483_6206199012203758456_n.jpg" alt="New York" style="width:100%; height:850px;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--This line ends the home div
+the navigation bar contains the links to the menu, contact, about and home div
+the about link is titled 'Who we are', and it it a dropdown that links to the about page and the gallery-->
+</div>
+<!--Line 302 begins the navigation bar-->
+<nav style="position:absolute; width:100%; top:200px;">
+  <!--Each element in the navigation bar is positioned relative or absolute to the desired loctaion of the website-->
+  <center>
+  <div class="container-fluid">
+  <ul class="navbar-nav" id="links">
+    <!--the font color of the links are white and the font size is 6-->
+    <li style="position:absolute; top:100px; right:800px;"><a href="#homediv"><font size=6 style="color:white;">Home</font></a></li>
+    <li class="dropdown" style="position:relative; top:79px; right:60px;"><a  data-toggle="dropdown" href="#"><h3 style="color:white">WHO WE ARE </h3></a>
+        <ul class="dropdown-content" id="drop">
+          <li><a href="#aboutdiv"><h5 style="color:white">ABOUT</h5></a></li>
+          <li><a href="#gallerydiv"><h5 style="color:white">GALLERY</h5></a></li>
+        </ul>
+      </li>    <li><a href="index.html"><img src="Magical Moments White purple.png" id="logo"></a></li>
+    <li style="position:relative; top:100px; left:60px;"><a href="#menudiv"><font size=6 style="color:white;">Menu</font></a></li>
+    <li style="position:relative; top:100px;left:150px;"><a href="#contactdiv"><font size=6 style="color:white;">Contact</a></font></li>
+  </ul>
+  <!--The 'Create Unforgettable Moments with Lifetime Impressions' header is positioned absolute below the navigation bar
+ but is still contained in the carousel and the font color is a special kind of blue with a size of 6-->
+  <h4 class="a" style="position:absolute; top:200px; right:400px;"><font color="#52c1c7"size="6">"Creating Unforgettable Moments with Lifetime Impressions"</font></h4>
+</center>
+</nav> <!--This line ends the navigation bar-->
+<br>
+<br>
+<!--The about div contains information about Magical Moments LLC, as well as testimonials/reviews about the companies services
+which is also in an a carousel format
+Line 328 begins the about div-->
+<div id="aboutdiv">
+  <br>
+  <br>
+  <center>
+  <h2 class="a"><font color="#87335c" size="10">ABOUT</font></h2>
+  </center>
+  <br>
+  <br>
+  <img src="Magical Moments White purple2.png" height="200px;">
+<br>
+  <h4 id="about"><font color="52c1c7">Magical Moments Catering & Event Planning</font> is a full service catering and event planning company with first class experience. We are currently serving Eastern North Carolina and Southeastern Virgina. We offer personalized service which includes consultations to initiate a relationship with each customer. Our job is to listen to your needs and wants in return we will work closely with you to bring your vision to life!</h4>
+  <br>
+  <h4 id="about">Magical Moments is here to assist you with all of your event planning needs, from beginning to end! Our team is knowledgeable, creative and confident in our ability to make your event memorable. When you choose Magical Moments for your next event, you can rest assured that the event will be stress-free, exceptional and delicately executed! We offer full service for the following events:</h4>
+<br>
+<ul>
+  <li>WEDDINGS</li>
+  <li>ANNIVERSARIES</li>
+  <li>CORPORATE EVENTS</li>
+  <li>HOLIDAY CELEBRATIONS</li>
+  <li>SCHOOL FUNCTIONS(including proms & spring dances)</li>
+  <li>GRADUATIONS</li>
+  <li>FAMILY REUNIONS</li>
+</ul>
+<ul style="position:relative; top:-150px; left:600px;">
+<li>CHURCH CELEBRATIONS</li>
+<li>BABY SHOWERS</li>
+<li>OFFICE MEETINGS</li>
+<li>BRIDAL SHOWERS</li>
+<li>ENGAGEMENT PARTIES</li>
+<li>COCKTAIL & DINNER PARTIES</li>
+</ul>
+<h4 class="a" style="margin-left:40px;"><font color="#6852a1" size="6">Testimonials</font></h4>
+<div class="container">
+  <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" id="test2">
+      <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel3" data-slide-to="1"></li>
+      <li data-target="#myCarousel3" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" id="test">
+  <p class="item active">"Looking forward to working with this prestigious company for my wedding day."<br>~Toya Jacobs~</p>
+  <p class="item">"Looking for a Cater?<br>No need to look any further....Give Magical Moments LLC a chance to make your event magical."<br>~Toya Jacobs~</p>
+  <p class="item">"I am truly thrilled to have my wedding planned by Magical Moments LLC. Yolanda is my primary planner and is amazing. She is always readily available and easy to get in contact with. I truly appreciate her attention to detail and dedication to efficiency and timelines as well. I cannot wait until October for our special day because I know that we are in great hands with Magical Moments.<br>Tanita is a magnificent chef and her food is mout watering and delicious. We absolutely love her homemade Alfredo sauce with chicken and shrimp bake. It is a crowd serving meal and great for intimate gatherings.<br>Hands down, the decorations for every event I've seen done by this company, has been beautiful. They are always spot on with the themes and color schemes. I know that these ladies will have all of my bridal events looking immaculate. I highly recommend them for all of your special events."<br>~Tiarra Headen~</p>
+    </div>
+  </div>
+</div>
+<button id="testiment" onclick="document.getElementById('id01').style.display='block';">Create Testimonial</button>
+<div id="id01" class="modal">
+  <form class="modal-content animate" action=""style="background-color:#212121;">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="Magical Moments White purple2.png" alt="Avatar" class="avatar">
+      <h4 style="color:#52c1c7;">Create A Magical Moments Testimonial</h4>
+    </div>
+    <div class="container">
+      <label for="name" style="color:#52c1c7;"><b>Name:</b></label>
+      <input type="text" id="personName" placeholder="Enter Name" name="name" required>
+      <label for="tstmnt" style="color:#52c1c7;"><b>Testiment:</b></label>
+      <p style="color:#6852a1;">Note: Testiment must be in quotations.</p>
+      <input type="text" id="testimonial" placeholder="Enter Testiment" name="tstmnt" required>
+      <center>
+      <button type="submit" onclick="javascript:addTestiment();">Submit</button>
+    </center>
+    </div>
+    </form>
+</div>
+<img src="Magical Moments White purple2.png" height="200px;" style="position:absolute; top: 1830px; right:20px;">
+<h4 style="position:relative; left:630px; top:0px;"><a href="#homediv"><font color="#ed4e96">Top the top&#8593;</font></a></h4>
+</div> <!--this line ends the about div
+The gallery div contains a gallery of images of Magical Moments LLC's services and when you
+clicks on an image in the gallery that image will open up a modal which is like a popup screen with a list of images
+Line 404 begins the gallery div-->
+<div id="gallerydiv">
+<br>
+<br>
+<center>
+<h2 class="a"><font color="#52c1c7" size="10">GALLERY</font></h2>
+<br>
+<br>
+<br>
+<div class="row">
+<div class="column">
+    <img src="food.png" style="width:100%; height:320px; position:relative; left:30px;" onclick="openFoodModal();currentSlide(1)" class="hover-shadow cursor">
+    <h2 class="a"><font color="#52c1c7" size="10">Food</font></h2>
+  </div>
+  <div id="myFoodModal" class="modal">
+  <span class="close cursor" onclick="closeFoodModal()">&times;</span>
+  <h2 class="a"><font color="#52c1c7" size="10">~Food Gallery~</font></h2>
+  <div class="modal-content">
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="food1.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="food2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="food3.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="food4.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="food5.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="food6.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="food7.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="food8.jpg" style="width:100%; height:700px;">
+    </div>
+    <a class="prev2" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next2" onclick="plusSlides(1)">&#10095;</a>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="food1.jpg" style="width:100%; height:168px;" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="food2.jpg" style="width:100%; " onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="food3.jpg" style="width:100%; " onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="food4.jpg" style="width:100%; " onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="food5.jpg" style="width:100%; height:168px;" onclick="currentSlide(5)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="food6.jpg" style="width:100%; height:168px;" onclick="currentSlide(6)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="food7.jpg" style="width:100%; height:168px;" onclick="currentSlide(7)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="food8.jpg" style="width:100%; height:168px;" onclick="currentSlide(8)">
+    </div>
+  </div>
+</div>
+  <div class="column">
+    <img src="decoration.png" style="width:100%; height:310px;position:relative; left:180px;" onclick="openDecorationModal();currentSlide2(1)" class="hover-shadow cursor">
+    <h2 class="a" style="position:relative; left:180px;"><font color="#52c1c7" size="10">Decorations</font></h2>
+  </div>
+  <div id="myDecorationModal" class="modal">
+  <span class="close cursor" onclick="closeDecorationModal()">&times;</span>
+  <h2 class="a"><font color="#52c1c7" size="10">~Decoration Gallery~</font></h2>
+  <div class="modal-content">
+    <div class="mySlides2">
+      <div class="numbertext">1 / 11</div>
+      <img src="decoration1.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides2">
+      <div class="numbertext">2 / 11</div>
+      <img src="decoration2.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides2">
+      <div class="numbertext">3 / 11</div>
+      <img src="decoration3.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides2">
+      <div class="numbertext">4 / 11</div>
+      <img src="decoration4.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides2">
+      <div class="numbertext">5 / 11</div>
+      <img src="decoraiton5.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides2">
+      <div class="numbertext">6 / 11</div>
+      <img src="decoration6.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides2">
+      <div class="numbertext">7 / 11</div>
+      <img src="decoration7.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides2">
+      <div class="numbertext">8 / 11</div>
+      <img src="decoration8.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides2">
+      <div class="numbertext">9 / 11</div>
+      <img src="decoration9.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides2">
+      <div class="numbertext">10 / 11</div>
+      <img src="decoration10.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides2">
+      <div class="numbertext">11 / 11</div>
+      <img src="decoration11.jpg" style="width:100%; height:700px;">
+    </div>
+    <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+    <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="decoration1.jpg" style="width:100%; height:20%;" onclick="currentSlide2(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="decoration2.jpg" style="width:100%; height:266px;" onclick="currentSlide2(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="decoration3.jpg" style="width:100%; height:266px;" onclick="currentSlide2(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="decoration4.jpg" style="width:100%; height:266px;" onclick="currentSlide2(4)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="decoraiton5.jpg" style="width:100%; height:266px;" onclick="currentSlide2(5)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="decoration6.jpg" style="width:100%; height:266px;" onclick="currentSlide2(6)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="decoration7.jpg" style="width:100%; height:266px;" onclick="currentSlide2(7)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="decoration8.jpg" style="width:100%; height:266px;" onclick="currentSlide2(8)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="decoration9.jpg" style="width:100%; height:266px;" onclick="currentSlide2(9)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="decoration10.jpg" style="width:100%; height:266px;" onclick="currentSlide2(10)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="decoration11.jpg" style="width:100%; height:266px;" onclick="currentSlide2(11)" >
+    </div>
+  </div>
+</div>
+  <div class="column">
+    <img src="wedding.png" style="width:95%; height:310px; position:relative; left:340px;" onclick="openWeddingModal();currentSlide3(1)" class="hover-shadow cursor">
+    <h2 class="a" style="position:relative; left:340px;"><font color="#52c1c7" size="10">Weddings</font></h2>
+  </div>
+  <div id="myWeddingModal" class="modal">
+  <span class="close cursor" onclick="closeWeddingModal()">&times;</span>
+  <h2 class="a"><font color="#52c1c7" size="10">~Wedding Gallery~</font></h2>
+  <div class="modal-content">
+    <div class="mySlides3">
+      <div class="numbertext">1 / 14</div>
+      <img src="wedding1.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides3">
+      <div class="numbertext">2 / 14</div>
+      <img src="wedding2.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides3">
+      <div class="numbertext">3 / 14</div>
+      <img src="wedding3.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides3">
+      <div class="numbertext">4 / 14</div>
+      <img src="wedding4.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides3">
+      <div class="numbertext">5 / 14</div>
+      <img src="wedding5.jpg" style="width:100%">
+    </div>
+    <div class="mySlides3">
+      <div class="numbertext">6 / 14</div>
+      <img src="wedding6.jpg" style="width:100%">
+    </div>
+    <div class="mySlides3">
+      <div class="numbertext">7 / 14</div>
+      <img src="wedding7.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides3">
+      <div class="numbertext">8 / 14</div>
+      <img src="wedding8.jpg" style="width:100%; height:700px;">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">9 / 14</div>
+      <img src="wedding9.jpg" style="width:100%">
+    </div>
+    <div class="mySlides3">
+      <div class="numbertext">10 / 14</div>
+      <img src="wedding10.jpg" style="width:100%">
+    </div>
+    <div class="mySlides3">
+      <div class="numbertext">11 / 14</div>
+      <img src="wedding11.jpg" style="width:100%">
+    </div>
+    <div class="mySlides3">
+      <div class="numbertext">12 / 14</div>
+      <img src="wedding12.jpg" style="width:100%">
+    </div>
+    <div class="mySlides3">
+      <div class="numbertext">13 / 14</div>
+      <img src="wedding13.jpg" style="width:100%">
+    </div>
+    <div class="mySlides3">
+      <div class="numbertext">14 / 14</div>
+      <img src="wedding14.jpg" style="width:100%">
+    </div>
+    <a class="prev2" onclick="plusSlides3(-1)">&#10094;</a>
+    <a class="next2" onclick="plusSlides3(1)">&#10095;</a>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding1.jpg" style="width:100%; height:200px;" onclick="currentSlide3(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding2.jpg" style="width:100%; height:200px;" onclick="currentSlide3(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding3.jpg" style="width:100%; height:200px;" onclick="currentSlide3(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding4.jpg" style="width:100%; height:200px;" onclick="currentSlide3(4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding5.jpg" style="width:100%; height:200px;" onclick="currentSlide3(5)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding6.jpg" style="width:100%; height:200px;" onclick="currentSlide3(6)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding7.jpg" style="width:100%; height:200px;" onclick="currentSlide3(7)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding8.jpg" style="width:100%; height:200px;" onclick="currentSlide3(8)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding9.jpg" style="width:100%; height:200px;" onclick="currentSlide3(9)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding10.jpg" style="width:100%; height:200px;" onclick="currentSlide3(10)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding11.jpg" style="width:100%; height:200px;" onclick="currentSlide3(11)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding12.jpg" style="width:100%; height:200px;" onclick="currentSlide3(12)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding13.jpg" style="width:100%; height:200px;" onclick="currentSlide3(13)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="wedding14.jpg" style="width:100%; height:200px;" onclick="currentSlide3(14)">
+    </div>
+    </div>
+</div>
+</div>
+</center>
+</div> <!--This line ends the gallery div
+The menu div contains the menu of the company
+the menu div has two sections one containing the cold & hot hor'deurves, salads,and entrees
+the other section contains the drinks, desserts and the Themed Buffets
+The first section is formatted to where when the user first visits they will see the salads section first and
+there are link buttons above the menu so if the user clicks on the buttons the indicated menu section will be replaced by the desired menu
+the second section is a carousel that has 5 indicators that range from 0-4 that displays the rest of the menu
+Line 630 begins the menu div-->
+<div id="menudiv">
+<br>
+<br>
+<center>
+<h2 class="a" style="position:relative; left:20px;"><font color="#87335c" size="10">MENU</font></h2>
+<font color="black;" size=4>
+  <a style="position:absolute; top: 2840px; left:200px;" onclick="document.getElementById('food').innerHTML='SALADS';document.getElementById('desc').style.left='610px';document.getElementById('food').style.left='630px';document.getElementById('salad').style.display='block'; document.getElementById('entrees').style.display='none';document.getElementById('cold').style.display='none';document.getElementById('desc').innerHTML='(Per person price)';document.getElementById('hot').style.display='none';">SALADS</a>
+  <a style="position:absolute; right:900px; top:2840px;" onclick="document.getElementById('food').innerHTML='COLD HOR\'DEURVES'; document.getElementById('food').style.left='600px';document.getElementById('desc').style.left='500px';document.getElementById('entrees').style.display='none';document.getElementById('cold').style.display='block'; document.getElementById('salad').style.display='none';document.getElementById('desc').innerHTML='Small (10-15 ppl), Medium (18-25 ppl), Large(30-35 ppl)';document.getElementById('hot').style.display='none';">COLD HOR'DEURVES</a>
+  <a  style="position:absolute; left:800px; top:2840px;"onclick="document.getElementById('food').innerHTML='HOT HOR\'DEURVES';document.getElementById('food').style.left='600px';document.getElementById('hot').style.display='block'; document.getElementById('salad').style.display='none';document.getElementById('entrees').style.display='none';document.getElementById('cold').style.display='none';document.getElementById('desc').innerHTML='';">HOT HOR'DEURVES</a>
+  <a style="position:absolute; left:1100px;top:2840px;" onclick="document.getElementById('food').innerHTML='ENTR&EacuteES';document.getElementById('food').style.left='630px';document.getElementById('salad').style.display='none'; document.getElementById('cold').style.display='none';document.getElementById('hot').style.display='none';document.getElementById('entrees').style.display='block';document.getElementById('desc').innerHTML='';">ENTR&EacuteES</a>
+</font>
+<b><font size=3><p id="food" style="position:absolute; top:2900px; left:630px;">SALADS</p></font></b>
+<p id="desc"style="position:absolute; top:2930px; left:610px;">(Per person price)</p>
+<div  id="salad" style="position:absolute; top:2670px; left:250px; width:700px;">
+<br>
+<ul style="position:absolute; top:350px; left:200px;">
+<li>Garden Salad</li>
+<p><font color="#87335c" size="3">Lettuce, tomato, cucumbers, shredded carrots, & shredded cheese</font></p>
+<li>Caesar Salad</li>
+<li>Spinach Salad</li>
+<li><p><font color="#87335c" size="3">Fresh spinach leaves, tomatoes, feta cheese, cucumbers, and your choice of dressing</font></p></li>
+<li>Pasta Salad</li>
+<li>Cucumber Salad</li>
+<li>Cobb Salad</li>
+<li>Fruit Salad</li>
+<li><p><font color="#87335c" size="3">Fresh in season selections</font></p><li>
+</ul>
+</div>
+<div  id="cold" style="position:absolute; top:2670px; left:250px; width:600px; display:none;">
+<br>
+<ul style="position:absolute; top:350px; left:200px;">
+<li>Fruit Trays</li>
+<li><p><font color="#87335c" size="3">Small, medium, or large</font></p></li>
+<li>Vegetable Trays</li>
+<li><p><font color="#87335c" size="3">Available in small (10-15 ppl), medium (18-25 ppl), and large (30-35 ppl)</font></p></li>
+<li>Chicken Salad</li>
+<li>Deviled Eggs</li>
+<li>Pinwheels</li>
+<p><font color="#87335c" size="3">Ham & Cheese, Turkey & Cheese, Veggies</font></p>
+<li>Black Bean & Corn Salsa</li>
+<li>Assorted Cheese Tray</li>
+<li><p><font color="#87335c" size="3">Chicken salad, tuna salad, ham & cheese, turkey & cheese, and cucumber</font></p></li>
+<li>Shrimp Coctail</li>
+</ul>
+</div>
+<div id="hot" style="position:absolute; top:2670px; left:150px; width:900px; display:none;">
+<br>
+<ul style="position:absolute; top:350px; left:300px;">
+<li>Lil' Smokies</li>
+<li>Meatballs</li>
+<li>Crab Balls</li>
+<li>Chicken Wings</li>
+<li><p><font color="#87335c" size="3">Fried, buffalo, teriyaki, taco, lemon pepper or bbq</font></p></li>
+<li>Queso Dip</li>
+<li>Spinach Artickoke Dip</li>
+<li>Hamburger Dip</li>
+<li>Buffalo Chicken Dip</li>
+<li>Sausage Dip</li>
+</ul>
+</div>
+<div  id="entrees" style="position:absolute; top:2670px; left:150px; width:1200px; display:none;">
+<br>
+<ul style="position:absolute; top:290px; left:200px;">
+<h5><u>Meats</u></h5>
+<li>Herb Chicken</li>
+<li>Grilled Chicken</li>
+<li>Chicken Marsala</li>
+<li>Barbecued Ribs</li>
+<li>Meatloaf</li>
+<li>Baked Salmon</li>
+<li>Grilled Salmon Filet w/ honey dill glaze</li>
+<li>Cury Chicken</li>
+<li>Stuffed Pork Chop</li>
+<li>Sesame Chicken</li>
+<li>Honey Glazed Chicken or Pork Chop</li>
+<li>Creamy Ranch Chicken</li>
+<li>Lemon Pepper Chicken</li>
+<li>Beef Tips and Gravy</li>
+<li>Pot Roast</li>
+<li>Hamburger Steak</li>
+<li>Shrimp and Grits</li>
+<li>Seafood Steam Pot</li>
+</ul>
+<ul style="position:absolute; top:290px; left:600px; width:30%;">
+<h5><u>Pastas</u></h5>
+<li>Spaghetti</li>
+<li>Tortellini</li>
+<li>Alfredo</li>
+<li><p><font color="#87335c" size="3">Add meat-chicken, shrimp</font></p></li>
+<li>Lasagna</li>
+<li>Chicken Divan</li>
+<li><p><font color="#87335c" size="3">Creamy Casserole made with chicken, broccoli & cheese</font></p></li>
+<li>Shrimp Scampi</li>
+<li>Creole Shrimp</li>
+<li>Stuffed Shells</li>
+</ul>
+</div>
+<div style="height:720px; width: 1000px; position: absolute;top: 2880px; left:190px; border: 3px solid #ff6699;"></div>
+</center>
+<h3 class="w3-right"style="position:relative; top:720px; left:1200px;"><a href="MM menu guide 2019.doc.pdf" id="downloadlink" download>Download Menu</a></h3>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div> <!--this is the end of the menu div
+line 766 is the beginning of the second section of the menu div-->
+<div id="menudiv2" style="background-color:#212121;">
+<br>
+<br>
+<center>
+<h2 class="a"><font color="#52c1c7" size="10">Let Us Create Your Next Magical Event</font></h2>
+<div class="container">
+<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" style="position:relative; top: 540px; left:100px;">
+      <li data-target="#myCarousel" data-slide-to="0" class="active" style="border: 2px solid #ff6699;"></li>
+      <li data-target="#myCarousel" data-slide-to="1" style="border: 2px solid #ff6699;"></li>
+      <li data-target="#myCarousel" data-slide-to="2" style="border: 2px solid #ff6699;"></li>
+      <li data-target="#myCarousel" data-slide-to="3" style="border: 2px solid #ff6699;"></li>
+      <li data-target="#myCarousel" data-slide-to="4" style="border: 2px solid #ff6699;"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+      <div style="background-color:white; height:500px; border:3px solid #ff6699;">
+        <h2 class="a"><font color="#87335c" size="10">~Drinks~</font></h2>
+        <br>
+        <br>
+        <br>
+        <ul style="position: relative; left: 300px;">
+          <font size="4" style="color:#52c1c7;">
+          <li>Water</li>
+          <li>Lemonade</li>
+          <li>Sweet and Unsweetened Tea</li>
+          <li>Punch</li>
+        </font>
+        </ul>
+      </div>
+      </div>
+      <div class="item">
+        <div style="background-color:white; height:500px; border:3px solid #ff6699;">
+          <h2 class="a"><font color="#87335c" size="10">~Desserts~</font></h2>
+          <ul style="position: relative; left: 150px;">
+            <font size="4" style="color:#52c1c7;">
+            <li>Honey Bun Cake.............................$30 (25 ppl)/$50 (45ppl)</li>
+            <li>Sweet Potato Pie.......................................................$10.00</li>
+            <li>Apple Pie...................................................................$12.00</li>
+            <li>Pecan Pie..................................................................$10.00</li>
+            <li>Nutty Buddy Pie........................................................$10.00</li>
+            <li>Strawberry Cake............................$35 (25 ppl)/$60 (45 ppl)</li>
+            <li>Bananna Pudding Cake.................$35 (25 ppl)/$60 (45 ppl)</li>
+            <li>Lemon Cake...................................$35 (25 ppl)/$60 (45 ppl)</li>
+            <li>Pound Cake...............................................................$15.00</li>
+            <p>Vanilla, Butter pecan, lemon</p>
+            <li>Fudge Ribbon Cake.......................$35 (25 ppl)/$60 (45 ppl)</li>
+            <li>Carrot Cake....................................$40 (25 ppl)/$65 (45 ppl)</li>
+            <li>Bananna Pudding..........................$40 (25 ppl)/$65 (45 ppl)</li>
+            <li>Fudge Brownies.............................$15 (25 ppl)/$28 (45 ppl)</li>
+            <li>Assorted types of cookies...........................................$0.00</li>
+          </font>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <div style="background-color:white; height:500px; border:3px solid #ff6699;">
+          <h2 class="a"><font color="#87335c" size="10">~Themed Buffets~</font></h2>
+          <ul style="position: relative; left: 130px;">
+            <font size="3" style="color:#52c1c7;">
+            <li><u><font color="#ff6699">Backyard BBQ: $15 per person</font></u></li>
+            <p>BBQ Chicken, pulled pork, Smoked Sausage (choice of 2)</p>
+            <p>Baked Beans, Potato Salad, Corn on the cob, Fruit Salad (choice of 2)</p>
+            <p>Served with rolls</p>
+            <li><u><font color="#ff6699">All American: $10 per person</font></u></li>
+            <p>Grilled Hot dogs and Hamburgers</p>
+            <p>Baked Beans, Potato Salad, Cole Slaw, Corn on the cob, Pasta salad (choice of 2)</p>
+            <p>Fixings/condiments: Lettuce, tomatoes, onions, ketchup, mustard, mayo</p>
+            <li><u><font color="#ff6699">Taco/Fajita Bar: $10 or $12 per person</font></u></li>
+            <p>Ground Beef Only ($10) and Chicken ($12)</p>
+            <p><i><font color="#87335c">Additional charge for steak</font></i></p>
+            <p>Toppings: Lettuce, tomatoes, cheese, sour cream, salsa, guacamole</p>
+            <p>Side: Rice and Beans</p>
+            <p>Hard shells and flour tortillas</p>
+          </font>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <div style="background-color:white; height:500px; border:3px solid #ff6699;">
+          <h2 class="a"><font color="#87335c" size="10">~Themed Buffets~</font></h2>
+          <ul style="position: relative; left: 130px;">
+            <font size="3" style="color:#52c1c7;">
+              <li><u><font color="#ff6699">Italian $13 per person</font></u></li>
+              <p>Pasta (Choice of 2): Bow tie, angel hair, penne, fettuccini, spiral</p>
+          <p>Meat (Choice of 2): Meatballs, Chicken, Sausage</p>
+          <p><i><font color="#87335c">*Shrimp* for an additional charge $2.00</font></i></p>
+          <p>Sauces (Choice of 2): Alfredo, Scampi, Marinara</p>
+          <p>Salad (Choice of 1): Garden, Caesar</p>
+          <p>Served with rolls</p>
+          <li><u><font color="#ff6699">Seafood: $20 per person</font></u></li>
+          <p>Meats: Fish, Shrimp</p>
+          <p><i><font color="#87335c">*Crab Balls* for additional charge $2.00</font></i></p>
+          <p>Sides (Choice of 2): Cole Slaw, Cabbage, Parsley potatoes, Garden or Caesar Salad</p>
+          <p>Served with Hushpuppies or cornbread</p>
+          </font>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <div style="background-color:white; height:500px; border:3px solid #ff6699;">
+          <h2 class="a"><font color="#87335c" size="10">~Themed Buffets~</font></h2>
+          <ul style="position: relative; left: 100px;">
+            <font size="3" style="color:#52c1c7;">
+              <br>
+              <br>
+              <br>
+              <br>
+            <li><u><font color="#ff6699">Southern Cuisines: $14 per person</font></u></li>
+            <p>Meat (Choice of 2 Meats): Fried Chicken, Meat Loaf, Hamburger steak, grilled chicken</p>
+            <p>Sides (Choice of 2): Mashed Potatoes, Mac & Cheese, Cabbage, Green Beans, Yams, Corn</p>
+            <p>Served with Rolls or Cornbread</p>
+          </font>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <center>
+    <h4 style="position:relative; top:-10px; right:20px;"><a href="#homediv"><font color="#ed4e96">Top the top&#8593;</font></a></h4>
+    </center>
+    <img src="fairy-2189750_960_720.png" style="width:200px; height:200px; position:relative; right:500px; top:-200px;">
+    <img src="fairy-2189750_960_720.png" style="width:200px; height:200px; position:relative; left:500px; top:-200px; transform:scaleX(-1);">
+  </div>
+</div>
+</center>
+<br>
+<br>
+<br>
+</div><!--this is the end of the second section of the menu div
+the contact div contains the contact number of each member of the company and a facebook link to the facebook page of Magical Moments LLC
+line 902 is the beginning of the contact div-->
+<div id="contactdiv" style="position:relative; left:50px;">
+  <br>
+  <br>
+  <center>
+  <h2 class="a"><font color="#87335c" size="10">CONTACT</font></h2>
+    <br>
+    <br>
+    <br>
+<img src="Magical Moments White purple2.png" height="200px;">
+<h4>For more information, contact a member of our team!</h4>
+<h4><font color="#ed4e96">YOLANDA BOWENS</font> (252) 814-9768</h4>
+<h4><font color="#ed4e96">SHERENA FOSTER</font> (252) 258-1214</h4>
+<h4><font color="#ed4e96">TANITA HOWARD</font> (757) 576-7791</h4>
+<h4><font color="#ed4e96">Email us at:</font><a href="mailto: magicmomentsllc@gmail.com" style="color:black; text-decoration:underline; text-decoration-color:#ed4e96;"> magicmomentsllc@gmail.com</a></h4>
+<h4><img src="69407.png" height="30px;"><a href="https://www.facebook.com/pg/magicalmomentsllc/photos/?ref=page_internal"> <font color="#52c1c7">@magicalmomentsllc</font></a></h4>
+<h4><img src="38846-200.png" height="30px;"><a href="https://www.instagram.com/magical_moments252/"> <font color="#52c1c7">@magical_moments252</font></a></h4>
+<h4><a href="#homediv"><font color="#ed4e96">Top the top&#8593;</font></a></h4>
+</center>
+</div> <!--this line is the end of the contact div-->
+<br>
+<br>
+<br>
+<!--the footer contains the logo for the company, the email address, and the ownership of the website to the company
+the position of the elements of the footer is centered, and the background color is a dary grey, and the font color is a light grey
+line 926 is the beginning of the footer-->
+<footer>
+  <br>
+  <center>
+  <p style="position:relative; right:50px;"><font color="#9c9c9c">magicmomentsllc@gmail.com | <img src="Magical Moments White purple2.png" height="70px;"> | Magical Moments, LLC.</font><p>
+</center>
+</footer> <!--this line is the end of the footer-->
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.11.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA70zw9k2qdjJedlfA39n2qbml8YlObDXk",
+    authDomain: "magicalmomentsllc-32272.firebaseapp.com",
+    databaseURL: "https://magicalmomentsllc-32272.firebaseio.com",
+    projectId: "magicalmomentsllc-32272",
+    storageBucket: "magicalmomentsllc-32272.appspot.com",
+    messagingSenderId: "692197770876"
+  };
+  firebase.initializeApp(config);
+  var database = firebase.database();
+  var newUserKey = database.ref().child('users').push().key;
+</script>
+</html>
